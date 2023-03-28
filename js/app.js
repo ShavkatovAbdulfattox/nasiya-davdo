@@ -12,7 +12,7 @@ const data = {
             id: 0,
             pin: 1111,
             name: "Abdulbosit",
-            date: new Date("2023, 1, 25"),
+            date: new Date(2023, 0, 25),
             phoneNumber: "991009898",
             product: {
                 model: "Iphone 14 Max",
@@ -48,7 +48,7 @@ const data = {
             id: 1,
             pin: 2222,
             name: "Fazliddin",
-            date: new Date("2022,1,22"),
+            date: new Date(2022, 0, 22),
             phoneNumber: "931035344",
             product: {
                 model: "Iphone 11 128gb",
@@ -83,7 +83,7 @@ const data = {
             id: 3,
             pin: 3333,
             name: "muzap jiyan",
-            date: new Date("2023,1,23"),
+            date: new Date(2023, 0, 23),
             phoneNumber: "994890070",
             product: {
                 model: "Iphone 12 128gb",
@@ -117,7 +117,7 @@ const data = {
             id: 4,
             pin: 4444,
             name: "sirdaryo",
-            date: new Date("2023,1,23"),
+            date: new Date(2023, 0, 23),
             phoneNumber: "911006650",
             product: {
                 model: "Iphone 13 Max",
@@ -151,7 +151,7 @@ const data = {
             id: 5,
             pin: 5555,
             name: "islom",
-            date: new Date("2023,1,05"),
+            date: new Date(2023, 0, 05),
             phoneNumber: "994585900",
             product: {
                 model: "Iphone 13pro 128",
@@ -185,7 +185,7 @@ const data = {
             id: 6,
             pin: 6666,
             name: "Abdulbosit",
-            date: new Date("2022,12,30,"),
+            date: new Date(2022, 11, 30),
             phoneNumber: "991009898",
             product: {
                 model: "iphone 11 pro",
@@ -220,7 +220,7 @@ const data = {
             id: 7,
             pin: 7777,
             name: "abboshon komolon",
-            date: new Date("2022,12,22,"),
+            date: new Date(2022, 11, 22),
             phoneNumber: "900150777",
             product: {
                 model: "iphone 14 pro max",
@@ -255,7 +255,7 @@ const data = {
             id: 8,
             pin: 1111,
             name: "abdulbosit s 49",
-            date: new Date("2022,12,22"),
+            date: new Date(2022, 11, 22),
             phoneNumber: "900150777",
             product: {
                 model: "iphone 14 pro max",
@@ -359,14 +359,14 @@ const fetchData = (data) => {
         const { id, name, date, phoneNumber, product, responsiblePerson } = data;
 
         // Formatting date in order to show to the user date 
-        // const options = {
+        const options = {
 
-        //     day: "numeric",
-        //     month: "long", // 2-digit
-        //     year: "numeric", // 2-digit
-        //     weekday: "long"
-        // }
-        // cons= new Intl.DateTimeFormat("uz", options).format(date)
+            day: "numeric",
+            month: "long", // 2-digit
+            year: "numeric", // 2-digit
+            weekday: "long"
+        }
+        const formattedDate = new Intl.DateTimeFormat("uz", options).format(date)
 
 
         // creating userInformation html elements 
@@ -439,7 +439,7 @@ const fetchData = (data) => {
         </div>
         <div class="user__date">
             <h2>Nasiyaga olingan sana 👇</h2>
-            <p></p>
+            <p>${formattedDate}</p>
         </div>
     </div >
       </section >
