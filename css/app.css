@@ -61,7 +61,7 @@
   display: flex;
   justify-content: center;
   margin-top: 3.5rem;
-} 
+}
 .header--tab {
   font-size: 1.3rem;
   font-weight: 500;
@@ -277,4 +277,16 @@
   font-weight: 600;
   font-size: 1.3rem;
   letter-spacing: 2px;
+}
+
+.top::before {
+  content: "⬆️";
+  display: inline-block;
+  font-size: 3rem;
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+  cursor: pointer;
+  user-select: unset;
+  /* opacity: 0; */
 }

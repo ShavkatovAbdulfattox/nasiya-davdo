@@ -447,7 +447,7 @@ const fetchData = (data) => {
         main.insertAdjacentHTML("afterbegin", userInformation)
 
     });
- 
+
 }
 function setBackground(productName) {
     const name = productName.slice(0, 9).toLowerCase();
@@ -591,4 +591,11 @@ loginButton.addEventListener("click", (e) => {
 })
 
 
+
+// Scroll to the top
+const scrollToTop = document.querySelector(".top")
+
+scrollToTop.addEventListener("click", () => {
+    loginButton.scrollIntoView({ behavior: "smooth" })
+})
 

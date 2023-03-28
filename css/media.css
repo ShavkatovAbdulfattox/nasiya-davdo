@@ -7,6 +7,10 @@
   }
 }
 @media screen and (max-width: 602px) {
+  .top::before {
+    font-size: 2rem;
+    right: 0.5rem;
+  }
   /* ** NAV ** */
 
   .logo {
@@ -65,7 +69,7 @@
   .user__responsible h3 span {
     font-size: 1.2rem !important;
   }
- 
+
   .user__date h2 {
     font-size: 1rem !important;
   }
