@@ -481,7 +481,7 @@ const createTabs = (data) => {
         return model.toLowerCase()
     })
     // Iterating tabsName in order to add button to the UI
-    for (const [key, tab] of Object.entries(['all', ...new Set(tabsName)])) {
+    for (const [key, tab] of Object.entries(['Hammasi', ...new Set(tabsName)])) {
         tabContainer.insertAdjacentHTML("beforeend", `<button class="btn-primary header--tab ${+key === 0 ? "active" : ""
             }" data-id="${key}">${tab.toUpperCase()}</button>`)
     }

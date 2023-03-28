@@ -43,6 +43,25 @@
 }
 /* ======================================= */
 
+@media screen and (max-width: 755px) {
+  .header__tabs--content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header--tab {
+    font-size: 1.3rem;
+    width: 85%;
+    border-radius: 0.1rem;
+    margin-right: 0 !important;
+    padding: 0.8rem 0 !important;
+    margin-bottom: 0.5rem;
+  }
+  .header--tab.active {
+    transform: translateY(0);
+  }
+}
+/* ======================================= */
+
 @media screen and (max-width: 1025px) {
   /* ** MAIN ** */
   /* admin--information */
@@ -56,5 +75,14 @@
   .admin--information h2 span {
     font-size: 1.3rem;
     padding: 0.3em 0.8rem;
+  }
+  /* header--tabs */
+  .header--tab {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.8rem;
+  }
+  .header--tab.active {
+    font-size: 1.25rem;
   }
 }

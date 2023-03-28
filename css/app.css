@@ -81,7 +81,6 @@
   /* opacity: 1; */
   transform: translateY(-8px);
   transition: 0.5s;
-  padding: 0.6rem 1.1rem;
   font-size: 1.4rem;
 }
 .nav--message h3 {
@@ -92,7 +91,7 @@
   font-size: 1.3rem;
   padding: 1rem 2rem;
   border-radius: 0.5em;
-z-index: 2;
+  z-index: 2;
 }
 .nav--message__success {
   background: var(--success);
