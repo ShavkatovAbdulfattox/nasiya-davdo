@@ -1,4 +1,14 @@
+@media screen and (max-width: 439px) {
+  .admin--information h2 {
+    flex-direction: column;
+  }
+  .admin--information h2 span {
+    margin-top: 1rem;
+  }
+}
 @media screen and (max-width: 602px) {
+  /* ** NAV ** */
+
   .logo {
     width: 50px !important;
     height: 50px !important;
@@ -7,6 +17,8 @@
     padding: 0.5rem;
     width: 80%;
     margin-left: 1rem;
+    border-radius: 0;
+    outline: none;
   }
   .nav__input::placeholder {
     font-size: 1rem;
@@ -15,8 +27,34 @@
     /* padding: 2px 0.5rem; */
     font-size: 1.1rem;
   }
-  .nav--message h3{
+  .nav--message h3 {
     font-size: 1rem;
     padding: 0.5rem 1rem;
+  }
+  /* admin--information */
+
+  .admin--information h2 {
+    font-size: 1rem !important;
+  }
+  .admin--information h2 span {
+    font-size: 1rem !important;
+    padding: 0.1em 0.6rem;
+  }
+}
+/* ======================================= */
+
+@media screen and (max-width: 1025px) {
+  /* ** MAIN ** */
+  /* admin--information */
+  .admin--information {
+    padding: 0.5rem;
+  }
+  .admin--information h2 {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+  }
+  .admin--information h2 span {
+    font-size: 1.3rem;
+    padding: 0.3em 0.8rem;
   }
 }
