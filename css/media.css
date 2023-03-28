@@ -1,0 +1,22 @@
+@media screen and (max-width: 602px) {
+  .logo {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .nav__input {
+    padding: 0.5rem;
+    width: 80%;
+    margin-left: 1rem;
+  }
+  .nav__input::placeholder {
+    font-size: 1rem;
+  }
+  .nav__input--enter {
+    /* padding: 2px 0.5rem; */
+    font-size: 1.1rem;
+  }
+  .nav--message h3{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
