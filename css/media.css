@@ -60,6 +60,25 @@
     transform: translateY(0);
   }
 }
+
+/* ======================================= */
+
+@media screen and (max-width: 900px) {
+  .user {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .user__left--information {
+    width: 80%;
+    max-width: 100%;
+  }
+  .user__right--information {
+    width: 80%;
+    margin-top: 1rem;
+    padding-bottom: 80px !important;
+  }
+}
 /* ======================================= */
 
 @media screen and (max-width: 1025px) {
@@ -84,5 +103,62 @@
   }
   .header--tab.active {
     font-size: 1.25rem;
+  }
+  /* ** USER INFORMATION */
+  .user__left--information {
+    padding: 1rem;
+  }
+  .model-name {
+    font-size: 1.2rem;
+  }
+  .model {
+    font-size: 1rem;
+  }
+  .user__left--desc h3 span {
+    font-size: 1.2rem;
+  }
+  /*   .user__right--information*/
+  .user__right--information {
+    padding: 1rem;
+  }
+
+  .user--photo {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .user--desc__detail h2 {
+    font-size: 1.1rem;
+  }
+  .user--desc__detail h2 span {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .user__responsible h3 {
+    font-style: 1.1rem;
+  }
+  .user__responsible h3 span {
+    font-size: 1.2rem;
+  }
+
+  .user--important__informations h2 {
+    font-size: 1.2rem;
+  }
+  .user--important__informations h3 {
+    font-size: 1.1rem;
+  }
+
+  .user__date {
+    margin: -1rem;
+    padding: 1rem;
+  }
+  .user__date h2 {
+    font-size: 1.2rem;
+  }
+  .user__date p {
+    font-size: 1.3rem;
   }
 }
