@@ -11,9 +11,15 @@ const newUser = [{
 ]
 
 const main = document.querySelector(".main--content");
+// const formattedDate = 
 
 const date = newUser.map(user => {
 
-    return `<h2>${user.date}</h2>`
+    return `<h2>${new Intl.DateTimeFormat("uz", {
+        day: "numeric",
+        month: "long", // 2-digit
+        year: "numeric", // 2-digit
+        weekday: "long"
+    }).format(user.date)}</h2>`
 })
 main.innerHTML = date 
