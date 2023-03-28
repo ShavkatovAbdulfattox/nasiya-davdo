@@ -447,7 +447,7 @@ const fetchData = (data) => {
         main.insertAdjacentHTML("afterbegin", userInformation)
 
     });
-
+ 
 }
 function setBackground(productName) {
     const name = productName.slice(0, 9).toLowerCase();
