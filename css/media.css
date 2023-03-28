@@ -40,6 +40,45 @@
     font-size: 1rem !important;
     padding: 0.1em 0.6rem;
   }
+  .user--desc {
+    margin-bottom: 2rem;
+  }
+  .user--desc__detail h2 {
+    font-size: 1rem !important;
+    flex-direction: column;
+    align-items: start;
+  }
+  .user--desc__detail h2 span {
+    font-size: 1.1rem !important;
+    margin: 10px 0;
+  }
+  .user--photo {
+    width: 4.5rem !important;
+    height: 4.5rem !important;
+    font-size: 1.2rem !important;
+  }
+  .user__responsible h3 {
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .user__responsible h3 span {
+    font-size: 1.2rem !important;
+  }
+
+  .user__date h2 {
+    font-size: 1rem !important;
+  }
+  .user__date p {
+    font-size: 1rem !important;
+    margin-top: 2px;
+  }
+  .user--important__informations h2 {
+    font-size: 1rem !important;
+  }
+  .user--important__informations h3 {
+    flex-direction: column;
+  }
 }
 /* ======================================= */
 
